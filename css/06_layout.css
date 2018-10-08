@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
+  box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
 }
 
 html {
+  overflow: auto;
   margin: 0;
   padding: 0;
 }
@@ -14,13 +16,36 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+.box {
+  max-width: 100%
+  max-height: 100%
 
+}
+.btn {
+  background-color: black;
+  opacity: 0.4
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 40px;
+  margin: 4px 2px;
+  opacity: 0.0;
+  transition: 0.3s;
+  max-width: 100vw;
+  max-height: 100vh;
+  z-index:9999;
+
+}
+
+.btn:hover {opacity: 0.5;
+
+}
 .content {
   font-size: 0;
   height: 100%;
   width: 100%;
 }
-
 .center,
 .box-content.center {
   position: absolute;
@@ -29,6 +54,8 @@ body {
   transform: translate(-50%,-50%);
   height: auto;
   width: auto;
+  size:auto;
+  background-color: transparent;
 }
 
 .box {
@@ -39,6 +66,7 @@ body {
   display: inline-block;
   vertical-align: top;
   position: relative;
+
 }
 
 .box-content {
@@ -49,44 +77,259 @@ body {
 
 .box-1 {
   background-color: #333;
-  width: 40%;
+  width: 33.33%;
+
+ 
 }
+
 
 .box-2 {
   background-color: #777;
-  width: 25%;
+  width: 33.33%;
 }
 
 .box-3 {
-  background-color: #aaa;
-  width: 35%;
+  background-color: #777;
+  width: 33.33%;
+
 }
 
 .row {
   height: 33.33%;
   width: 100%;
-  opacity: 0.5;
+  
   position: relative;
+  cursor: pointer;
+    transition: all 0.6s;
 }
 
+
 .row-1 {
-  background-color: #33f;
+ 
+  background-color:#FFFFFF;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+   background: url(../images/dota2.jpg);
+   
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:100% 100%;
+
+}
+.row-1:hover {
+  transform: scale(2.8);
+  opacity: 0.9;transform: scale(2.8);
+  z-index:9999;
 }
 
 .row-2 {
-  background-color: #77f;
+ 
+  background-color:#FFFFFF;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+   background: url(../images/finder.jpg);
+   background-size:100%
+    background:no-repeat;
+   background-position:center;
+   background-size:100% 100%;
+
+}
+.row-2:hover {
+  transform: scale(1.4);
+  opacity: 0.9;
+  z-index:9999;
 }
 
 .row-3 {
-  background-color: #aaf;
+  
+  background-color:#FFFFFF;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+   background: url(../images/sublimetext.png);
+  
+   background-position:center;
+    background-size:100% 100%;
+}
+.row-3:hover {
+  transform: scale(1.5);
+  opacity: 0.9;
+  z-index:9999;
 }
 
 .row-4 {
-  background-color: #33f;
-  height: 50%;
+  
+  background-color:#FFFFFF;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+   background: url(../images/logicpro.png);
+   background-size:100%
+ 
+   background:no-repeat;
+   background-position:center;
+    background-size:100% 150%;
+}
+.row-4:hover {
+  transform: scale(1.4);
+  opacity: 0.9;
+  z-index:9999;
 }
 
 .row-5 {
-  background-color: #77f;
-  height: 50%;
+  background-color:#FFFFFF;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+   background: url(../images/indesign.jpg);
+   background-size:100%
+   background:no-repeat;
+   
+    background-size:100% 165%;
+}
+.row-5:hover {
+  transform: scale(2.3);
+  opacity: 0.9;
+  z-index:9999;
+}
+
+.row-6 {
+  background-color:#FFFFFF;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+   background: url(../images/steam.jpg);
+   background-size:100%
+   background:no-repeat;
+   background-position:center;
+    background-size:100% 100%;
+
+ }
+ .row-6:hover {
+  transform: scale(1.3);
+  opacity: 0.9;
+  z-index:9999;
+}
+
+
+.row-7 {
+  background-color:#FFFFFF;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+   background: url(../images/photoshop.png);
+   background-size:100%
+   background:no-repeat;
+   background-position:center;
+    background-size:100% 170%;
+  }
+  .row-7:hover {
+  transform: scale(4.2);
+  opacity: 1;
+  z-index:9999;
+}
+
+
+.row-8 {
+  background-color:#FFFFFF;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+   background: url(../images/google.jpg);
+   background-size:100%
+   background:no-repeat;
+   background-position:center;
+    background-size:100% 100%;
+}
+.row-8:hover {
+  transform: scale(1.2);
+  opacity: 0.9;
+  z-index:9999;
+}
+
+
+.row-9 {
+  background-color:#FFFFFF;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+   background: url(../images/wechat.png);
+   background-size:100%
+   background:no-repeat;
+   background-position:center;
+  background-size:100% 150%;
+ }
+ .row-9:hover {
+  transform: scale(1.5);
+  opacity: 0.9;
+  z-index:9999;
+}
+
+@media only screen and (min-width: 600px) {
+  .box {
+    
+    width: 100%;
+  }
+  .box-1 {
+  background-color: #333;
+  width: 100%;
+  height: 33.33%
+
+ 
+}
+
+
+.box-2 {
+  background-color: #777;
+  width: 100%;
+  height:33.33%;
+}
+
+.box-3 {
+  background-color: #aaa;
+  width: 100%;
+  height:33.33%;
+}
+
+  
+  .row {
+ background-size: 20% 120%
+
+}
+}
+
+@media only screen and (min-width: 768px) {
+  .box {
+    
+    width: 50%;
+  }
+
+  .row {
+ background-size: 30% 120%
+
+}
+
+  
+}
+
+@media only screen and (min-width: 1025px) {
+  .box {
+    width: 33.33%;
+    height: 100vh;
+  }
+  .row {
+ background-size: 100% 120%
+
+}
 }
