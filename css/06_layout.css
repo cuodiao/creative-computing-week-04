@@ -25,16 +25,17 @@ body {
   background-color: black;
   opacity: 0.4
   border: none;
-  color: white;
+  
   padding: 16px 32px;
   text-align: center;
   font-size: 40px;
-  margin: 4px 2px;
+  
   opacity: 0.0;
   transition: 0.3s;
   max-width: 100vw;
   max-height: 100vh;
   z-index:9999;
+  font: helvatica;
 
 }
 
@@ -43,8 +44,10 @@ body {
 }
 .content {
   font-size: 0;
+  font-family:helvetica;
   height: 100%;
   width: 100%;
+  background-color: transparent;
 }
 .center,
 .box-content.center {
@@ -250,6 +253,7 @@ body {
    background:no-repeat;
    background-position:center;
     background-size:100% 100%;
+    background-filter: brightness(50%);;
 }
 .row-8:hover {
   transform: scale(1.2);
@@ -310,10 +314,19 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .box {
-    
-    width: 50%;
+
+ 
+ .row{
+    width:50%;
+    height:50%;
+    display: inline-block;
+    float: left;
   }
+  
+
+  
+ 
+
 
   .row {
  background-size: 30% 120%
